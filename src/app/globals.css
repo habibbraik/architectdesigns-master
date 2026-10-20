@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+:root {
+  --color-ink: #14130f;
+  --color-paper: #f5f2ea;
+  --color-brass: #b08d57;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background: var(--color-ink);
+  color: var(--color-paper);
+}
+
+body {
+  font-family: var(--font-sans), "Helvetica Neue", Arial, sans-serif;
+}
+
+::selection {
+  background: var(--color-brass);
+  color: var(--color-ink);
+}
